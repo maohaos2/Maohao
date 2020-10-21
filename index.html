@@ -1,7 +1,135 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1600px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+  	<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-black w3-animate-left" style="z-index:3;width:220px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-yellow" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <h3><b>Maohao Shen</b></h3>
+   <!-- <p class="w3-text-grey">Template by W3.CSS</p> -->
+  </div>
+  <div class="w3-bar-block">
+   <!-- <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a>  -->
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT ME</a> 
+    <a href="#Education" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-institution fa-fw w3-margin-right"></i>EDUCATION</a>
+    <a href="#Research" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-book fa-fw w3-margin-right"></i>RESEARCH</a>
+    <a href="#Teaching" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-pencil-square-o fa-fw w3-margin-right"></i>TEACHING</a>
+    <a href="#Awards" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-trophy fa-fw w3-margin-right"></i>AWARDS</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+  </div>
+</nav>
+
+    <!-- Right Column -->
+    <div style="margin-left:18%">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom" id = "about">
+        <h2 class="w3-text-black w3-padding-6"><i class="fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><strong>About Me</strong></h2>
+        <div class="w3-container">
+        <img src="https://raw.githubusercontent.com/maohaos2/maohao.github.io/master/Images/Profile.JPG" style="width:100%;" class="w3-round"><br><br>
+        <p><h6>I am a senior year undergraduate student at UIUC, majoring in Computer Engineering and minoring in Mathematics. I am fortunated to be advised by Prof. Yoram Brelser and Prof. Sanmi Koyejo. </h6></p>
+        <p><h6> I have broad interests in Image Signal Processing, Machine Learning, as well as Computer Vision. I am espexially interested in solving image processing problems both from both signal processing and machine learning perspectives. The research topics I have explored include Image Restoration, Sparse Representation, Dimensionality Reudction, and Active Learning.  </h6></p>
+        <p><h6>Please check my CV for detailed information. </h6></p>
+        </div>
+      </div>
+      
+	<!-- Education Section -->
+      <div class="w3-container w3-card w3-white w3-margin-bottom" id = "Education">
+        <h2 class="w3-text-black w3-padding-6"><i class="fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <div class="w3-container">
+          <p><h4><b>University of Illinois at Urbana-Champaign(UIUC)</b></h4></p>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017 - 2021</h6>
+          <p><h6><b>B.S. in Computer Engineering</b></h6></p>
+          <p><h6><b>GPA: 4.0/4.0 </b> </h6></p>
+        </div>
+      </div>
+      
+      <!-- Research Section -->
+      <div class="w3-container w3-card w3-white w3-margin-bottom" id = "Research">
+        <h2 class="w3-text-black w3-padding-6"><i class="fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Publications</h2>
+        <div class="w3-container">
+          <p><h6> &bull; Bowen Jiang*, <b>Maohao Shen*</b>. <a href=>Dimensionality Reduction Via Diffusion Map Improved with Supervised Linear Projection.</a> In IEEE International Conference on Image Processing (ICIP’20), 2020.</h6></p>
+          <p><h6> &bull; <b>Maohao Shen</b>, Jacky Y.Zhang, Leihao Chen, Weiman Yan, Neel Jani, Brad Sutton, Oluwasanmi Koyejo.
+          <a href="https://github.com/maohaos2/maohao.github.io/blob/master/Publication/Active_Learning.pdf" target="_blank">
+ Labeling Cost Sensitive Active Learning for Brain Tumor Segmentation.</a> In IEEE International Symposium on Biomedical Imaging (ISBI’21), 2021. (In Submission)</h6></p>
+          <p><h6> <b>(* indicates equal contribution)</b></h6></p>
+         </div>
+        
+        <h2 class="w3-text-black w3-padding-6"><i class="fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Research Projects</h2>
+        <div class="w3-container">
+        
+        	<h3 class="w3-text-black w3-padding-6"><i class="fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Current 		Projects</h3>
+          	<div class="w3-container">
+          	<p><h4><b>&bull; Image Blind Deconvolution</b></h4></p>
+          	<p><h4><b>&bull; Baysian Coreset Active Learning</b></h4></p>
+         	</div>
+         
+        	<h3 class="w3-text-black w3-padding-6"><i class="fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Previous 		Projects</h3>
+        	<div class="w3-container">
+          	<p><h4><b>&bull; Dimensionality Reduction for Image Processing</b></h4></p>
+          	<p><h4><b>&bull; Active Learning for Brain Tumor Segmentation</b></h4></p>
+          	<p><h4><b>&bull; Super Resolution Imaging for Micro Bubble Localization</b></h4></p>
+        	</div>
+   
+      	</div>
+       </div>
+      
+      <div class="w3-container w3-card w3-white w3-margin-bottom" id = "Teaching">
+        <h2 class="w3-text-black w3-padding-6"><i class="fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Teaching</h2>
+        <div class="w3-container">
+        <p><h5><b>&bull; ECE 310 Digital Signal Processing, Jun 2019 - Aug 2019</b></h5></p>
+        <p><h5><b>&bull; ECE 210 Analog Signal Processing, Aug 2018 - May 2019</b></h5></p>
+        <p><h6><b>Grader: designing the rubric and grading the homeworks. </b></h6></p>
+        </div>
+      </div>
+      
+      <div class="w3-container w3-card w3-white w3-margin-bottom" id = "Awards">
+        <h2 class="w3-text-black w3-padding-6"><i class="fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Awards</h2>
+        <div class="w3-container">
+        <p><h5><b>&bull; Dean’s List (2017-2020) </b></h5></p>
+        <p><h5><b>&bull; James Scholar (2017-2020) </b></h5></p>
+        <p><h5><b>&bull; Henry O. Koehler Merit Scholarship, Dept. of Electrical & Computer Engineering (Sept 2020)</b></h5></p>	
+        <p><h5><b>&bull; Sargent and Lundy Engineering Scholarship, College of Engineering (May 2020) </b></h5></p>
+        <p><h5><b>&bull; TechnipFMC, College of Engineering (May 2020)  </b></h5></p>
+        <p><h5><b>&bull; Ellery B. Paine Outstanding Junior Award, Dept. of Electrical & Computer Engineering (May 2020)</b></h5></p>
+        <p><h5><b>&bull; George A. and Ina M. Zehr Scholarship, Dept. of Electrical & Computer Engineering (Sept 2019) </b></h5></5>
+        </div>
+      </div>
+      
+      <div class="w3-container w3-card w3-white w3-margin-bottom" id = "contact">
+        <h2 class="w3-text-black w3-padding-6"><i class="fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Contact</h2>
+        <div class="w3-container">
+        
+        <p><h5><b> <i class="fa fa-phone" style="font-size:24px"></i> +1(217)693-9251</b></h5></p>
+        <p><h5><b><i class="fa fa-envelope" style="font-size:24px"></i> maohaos2@illinois.edu</b></h5></p>
+        </div>
+      </div>
+    
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
 </body>
 </html>
