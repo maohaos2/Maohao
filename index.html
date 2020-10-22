@@ -6,6 +6,11 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+  
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </style>
@@ -44,9 +49,11 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <h2 class="w3-text-black w3-padding-6"><i class="fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><strong>About Me</strong></h2>
         <div class="w3-container">
         <img src="https://raw.githubusercontent.com/maohaos2/maohao.github.io/master/Images/Profile.JPG" style="width:100%;" class="w3-round"><br><br>
-        <p><h6>I am a senior year undergraduate student at UIUC, majoring in Computer Engineering and minoring in Mathematics. I am fortunate to be advised by Prof. Yoram Brelser and Prof.<a href = "http://sanmi.cs.illinois.edu/">Sanmi Koyejo</a>. </h6></p>
-        <p><h6> I have broad interests in Image Signal Processing, Machine Learning, as well as Computer Vision. I am especially interested in solving image processing problems both from both signal processing and machine learning perspectives. The research topics I have explored include Image Restoration, Sparse Representation, Dimensionality Reduction, and Active Learning.  </h6></p>
-        <p><h6>Please check my<a href="CV.pdf"> CV</a> for detailed information. </h6></p>
+        <div class="w3-justify">
+        <p><h6>I am a senior year undergraduate student at UIUC, majoring in Computer Engineering and minoring in Mathematics. I am fortunate to be advised by Prof. Yoram Brelser and Prof. <a href = "http://sanmi.cs.illinois.edu/">Sanmi Koyejo</a>. </h6></p>
+        <p><h6> I have broad interests in Image Signal Processing, Machine Learning, as well as Computer Vision. I am especially interested in solving image processing problems both from signal processing and machine learning perspectives. The research topics I have explored include Image Restoration, Sparse Representation, Dimensionality Reduction, and Active Learning.  </h6></p>
+        </div>
+        <p><h6>Please check my<a href="CV.pdf"><font color="#99ccFF"> CV</font></a> for detailed information. </h6></p>
         </div>
       </div>
       
@@ -65,10 +72,10 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
       <div class="w3-container w3-card w3-white w3-margin-bottom" id = "Research">
         <h2 class="w3-text-black w3-padding-6"><i class="fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Publications</h2>
         <div class="w3-container">
-          <p><h6> &bull; Bowen Jiang*, <b>Maohao Shen*</b>. <a href="https://arxiv.org/abs/2008.03440">Dimensionality Reduction Via Diffusion Map Improved with Supervised Linear Projection.</a> In IEEE International Conference on Image Processing (ICIP’20), 2020.</h6></p>
+          <p><h6> &bull; Bowen Jiang*, <b>Maohao Shen*</b>. <a href="https://arxiv.org/abs/2008.03440"><font color="#99ccFF">Dimensionality Reduction Via Diffusion Map Improved with Supervised Linear Projection.</font></a> In IEEE International Conference on Image Processing (ICIP’20), 2020.</h6></p>
           <p><h6> &bull; <b>Maohao Shen</b>, Jacky Y.Zhang, Leihao Chen, Weiman Yan, Neel Jani, Brad Sutton, Oluwasanmi Koyejo.
-          <a href="Active_Learning.pdf">
- Labeling Cost Sensitive Active Learning for Brain Tumor Segmentation.</a> In IEEE International Symposium on Biomedical Imaging (ISBI’21), 2021. (In Submission)</h6></p>
+          <a href="Active_Learning.pdf"><font color="#99ccFF">
+ Labeling Cost Sensitive Active Learning for Brain Tumor Segmentation.</font></a> In IEEE International Symposium on Biomedical Imaging (ISBI’21), 2021. (In Submission)</h6></p>
           <p><h6> <b>(* indicates equal contribution)</b></h6></p>
          </div>
         
@@ -78,25 +85,39 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         	<h3 class="w3-text-black w3-padding-6"><i class="fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Recent Projects</h3>
           	<div class="w3-container">
           	<p><h4><b>&bull; Image Blind Deconvolution</b></h4></p>
-          	<p><h4><b>&bull; Baysian Coreset Active Learning</b></h4></p>
+            <div class="w3-justify">
+            <p><h6>Research project led by Prof. Yoram Bresler. We aim to propose a method to adapt the proposed multichannel sparse blind deconvolution(MSBD) algorithm to solve the inverse problems: single natural image blind deblurring and Ulntrousand image blind deconvolution.</h6></p>
+            <p><h6>MSBD is a problem of recovering an unknown signal \(f\) and multiple unknown channels \(x_i\) given their convolutional measurements \(y_i = x_i \circledast f\), where \(x_i\) is sparse, and \(f\) is invertible. The nonconvex optimization approach proposed by Prof. Bresler and his Ph.D. student has already been proved successful in solving such problems, specifically for blind deconvolution for fluorescence microscopy images. However, how about other deconvolution problems that cannot satisfy such assumptions? For example, the natural image itself is not sparse, given the blurred observation \(y = x \circledast f\), where ground truth natural image \(x\) is not sparse, how to solve such problems? Similarly, for other applications like Untrousand localization microscopy, the observations are sparse micro bubble images blurred with the point spread function(PSF) of the imaging system. In such a case, the assumption about \(f\) is hard to be satisfied, that is, the PSF might not be invertible and even spatial varying. </h6></p>
+            <p><h6>For the natural image deblurring problem, it's well known that natural images have sparse representations in some transform domains, e.g., the DCT, Wavelet domains, and such property is usually used as a regularization term to solve most image inverse problems. In our project, we also try to use image sparse representation approaches. Specifically, we aim to utilize Transform Learning(learning a sparsifying transform) to transform the natural image to multiple sparse images to satisfy the assumption for MSBD. However, there are still some challenges and unsolved problems and we will continue exploring in this direction.</h6></p>
+            <p><h6>Due to the sparse nature of ULM images, the MSBD algorithm can find an approximated PSF close to the ground truth for the ULM image deconvolution problem. We're trying to use some non-blind deconvolution methods like the CLEAN algorithm to further recover ground truth images. Similarly, there're still some parts that can be improved and refined.</h6></p>
+            </div>
+          	<p><h4><b>&bull; Bayesian Coreset Active Learning</b></h4></p>
+            <div class="w3-justify">
+            <p><h6>Research Project led by Prof. Sanmi Koyejo. We aim to propose an active learning algorithm from the Bayesian Coreset perspective.</h6></p>
+            <p><h6>Bayesian Coreset is an approach for the Bayesian inference problem, the idea is selecting a subset of weighted data samples to approximate the posterior inference using the full dataset. Such a problem is closely relevant to batch active learning, which aims to choose a batch of data from the unlabeled data pool that is jointly informative for model training. Most recently proposed methods usually utilize the Bayesian Coreset as the selected data samples for active learning, and re-casted the Bayesian Coreset construction as a sparse subset approximation problem and solved it by some optimization techniques. We would like to further dive into this topic and there're many interesting directions, including improving the optimization techniques, utilizing the unused weights, and getting some inspiration from semi-supervised learning approaches.</h6></p>
+            
+            </div>
          	</div>
          
         	<h3 class="w3-text-black w3-padding-6"><i class="fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Previous 		Projects</h3>
         	<div class="w3-container">
           	<p><h4><b>&bull; Dimensionality Reduction for Image Processing</b></h4></p>
             <div class="w3-justify">
-            <p><h6>Project led by Prof. Ivan Dokmanic. We proposed a nonlinear dimensionality reduction algorithm for solving classic ML problems, including image classification and human action recognition. </h6></p>
-            <p><h6>Dimensionality reduction is a classic research topic aim to avoid the "curse of dimensinoality" problem. There are some shortcomings of conventional linear dimensionality reduction approaches. For example, principal componentanalysis(PCA) is an unsupervised method, which doesn’t account for the labelinformation. Linear Discriminate Analysis (LDA) will fail in classification problem if data follow some distribution other than Gaussian. Meanwhile, for some special data like human action sequencing, some conventional non-linear dimensionality reduction methods like Diffusion Map has a well-known ability to discover the non-linear hidden manifold from this kind of high dimensional data. However, there's still a drawback for Diffusion Map,  which is unsupervised. Thus, to mitigate this problem and further improve the performance of Diffusion Map, We designed a supervised linear projection method that uses label information to re-adjust data distribution to increase the data similarity within the same image class and decrease the data similarity between different image classes. Combined with the diffusion map, our proposed approach can extract low dimensional discriminate features from data that could help us achieve higher classification accuracy. (Please check my paper in the publication section for details.)</h6></p>
+            <p><h6>Research project led by Prof. Ivan Dokmanic. We proposed a nonlinear dimensionality reduction algorithm for solving classic ML problems, including image classification and human action recognition. </h6></p>
+            <p><h6>Dimensionality reduction is a classic research topic aim to avoid the "curse of dimensinoality" problem. There are some shortcomings of conventional linear dimensionality reduction approaches. For example, principal componentanalysis(PCA) is an unsupervised method, which doesn’t account for the label information. Linear Discriminate Analysis (LDA) will fail in classification problem if data follow some distribution other than Gaussian. Meanwhile, for some special data like human action sequencing, some conventional non-linear dimensionality reduction methods like Diffusion Map has a well-known ability to discover the non-linear hidden manifold from this kind of high dimensional data. However, there's still a drawback of Diffusion Map,  which is unsupervised. Thus, to mitigate this problem and further improve the performance of Diffusion Map, We designed a supervised linear projection method that uses label information to re-adjust data distribution to increase the data similarity within the same image class and decrease the data similarity between different image classes. Combined with the diffusion map, our proposed approach can extract low dimensional discriminate features from data that could help us achieve higher classification accuracy. </h6></p>
+            <p><h6>(Please check my paper in the Publications section for details.)</h6></p>
             </div>
           	<p><h4><b>&bull; Active Learning for Brain Tumor Segmentation</b></h4></p>
             <div class="w3-justify">
-            <p><h6>Project led by Prof. Sanmi Koyejo. We deigned a novel Active Learning algorithm to solve medical image segnmentation problem.</h6></p>
-            <p><h6>Over the last decade, deep learning methods have achieved state-of-the-art for medical image segmentation tasks. However, the difficulty of obtaining sufficient labeled data can be a bottleneck. While active learning is known to mitigate the issue of scarce labeling in many real word learning problems, few proposed works have considered the application to biomedical image segmentation tasks. To this end, we design a novel active learning framework specially adapted to the brain tumor segmentation. Our approach includes a novel labeling cost designed to capture radiologists' practical labeling costs. This is combined with two acquisition functions to incorporate uncertainty and representation information, ensuring that the active learning selects informative and diverse data. The resulting procedure is a constrained combinatorial optimization problem. We propose an efficient algorithm for this task and demonstrate the proposed method's advantages for segmenting brain MRI data. (Please check my paper in the publication section for details.)</h6></p>
+            <p><h6>Research project led by Prof. Sanmi Koyejo. We deigned a novel Active Learning algorithm to solve medical image segnmentation problem.</h6></p>
+            <p><h6>Over the last decade, deep learning methods have achieved state-of-the-art for medical image segmentation tasks. However, the difficulty of obtaining sufficient labeled data can be a bottleneck. While active learning is known to mitigate the issue of scarce labeling in many real word learning problems, few proposed works have considered the application to biomedical image segmentation tasks. To this end, we design a novel active learning framework specially adapted to the brain tumor segmentation. Our approach includes a novel labeling cost designed to capture radiologists' practical labeling costs. This is combined with two acquisition functions to incorporate uncertainty and representation information, ensuring that the active learning selects informative and diverse data. The resulting procedure is a constrained combinatorial optimization problem. We propose an efficient algorithm for this task and demonstrate the proposed method's advantages for segmenting brain MRI data. </h6></p>
+            <h6><p>(Please check my paper in the Publications section for details.)</h6></p>
             </div>
           	<p><h4><b>&bull; Super Resolution Imaging for Micro Bubble Localization</b></h4></p>
             <div class="w3-justify">
             <p><h6>Individual study project led by Prof. Yoram Bresler. We studied and solved the image deconvolution problem for Ultrasonic localization microscopy(ULM).</h6></p> 
-            <p><h6>ULM is used to better visualize shapes of the human vascular, which injects inert gas micro bubbles into the vascular and use locations of bubbles in ultrasound imaging to estimate the shapes of the vascular. However, the received images may be blurred by many reasons, and this process can be approximated mathematically as original clear image convolved with point spread functions (PSF).  In this project, we assume such PSF is known to us, but it can be spatial invariant and spatial varying. We tried three different algorithms: CLEAN, Matching Pursuit (MP), Orthogonal Matching Pursuit (OMP) to solve non-blind image deconvolution problem both on spatial invariant and varying situations and implemented experiments on practical micro bubble data. Beyond that, we also provide rigorous theory proof about the equivalence of CLEAN algorithm and Matching Pursuit, as well as proved theoretically that Orthogonal Matching Pursuit has advantages over matching pursuit. (Please check my <a href="Image_Deconvolution_Research_Final_Report.pdf"> Research Report</a> for details.)</h6></p>
+            <p><h6>ULM is used to better visualize shapes of the human vascular, which injects inert gas micro bubbles into the vascular and use locations of bubbles in ultrasound imaging to estimate the shapes of the vascular. However, the received images may be blurred by many reasons, and this process can be approximated mathematically as original clear image convolved with point spread functions (PSF).  In this project, we assume such PSF is known to us, but it can be spatial invariant and spatial varying. We tried three different algorithms: CLEAN, Matching Pursuit (MP), Orthogonal Matching Pursuit (OMP) to solve non-blind image deconvolution problem both on spatial invariant and varying situations and implemented experiments on practical micro bubble data. Beyond that, we also provide rigorous theory proof about the equivalence of CLEAN algorithm and Matching Pursuit, as well as proved theoretically that Orthogonal Matching Pursuit has advantages over matching pursuit.</h6></p>
+            <h6><p>(Please check my <a href="Image_Deconvolution_Research_Final_Report.pdf"><font color="#99ccFF"> Research Report</font></a> for details.)</h6></p>
             </div>
             
         	</div>
