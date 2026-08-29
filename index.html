@@ -14,6 +14,32 @@
   
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+.entry-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 20px 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+.entry-row:last-child {
+  border-bottom: none;
+}
+.entry-logo {
+  width: 100px;
+  height: 100px;
+  min-width: 100px;
+  object-fit: contain;
+  border-radius: 12px;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.15);
+}
+.entry-body h4 {
+  margin: 0 0 6px 0;
+}
+.entry-body h6 {
+  margin: 3px 0;
+}
 </style>
 <body class="w3-light-grey">
 
@@ -49,9 +75,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
       <div class="w3-container w3-card w3-white w3-margin-bottom" id = "about">
         <h2 class="w3-text-black w3-padding-6"><i class="fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><strong>About Me</strong></h2>
         <div class="w3-container">
-        <img src="https://raw.githubusercontent.com/maohaos2/maohao.github.io/master/Images/profile.jpg" style="width:40%;" class="w3-round"><br><br>
+        <img src="Images/profile.jpg" style="width:40%;" class="w3-round"><br><br>
         <div class="w3-justify">
-        <p><h6>I am a fifth-year PhD student at <a href = "https://www.eecs.mit.edu/">EECS@MIT</a> supervised by Prof. <a href = "http://allegro.mit.edu/~gww/">Gregory Wornell</a>. I obtained my bacholor of science degree in computer engineering at UIUC, where I was fortunate to be advised by Prof. <a href = "http://sanmi.cs.illinois.edu/">Sanmi Koyejo</a> and Prof. <a href = "https://scholar.google.co.in/citations?hl=en&user=Kj35VJ8AAAAJ&view_op=list_works">Yoram Bresler</a>. </h6></p>
+        <p><h6>I am a final-year PhD student at <a href = "https://www.eecs.mit.edu/">EECS@MIT</a> supervised by Prof. <a href = "http://allegro.mit.edu/~gww/">Gregory Wornell</a>. I obtained my bacholor of science degree in computer engineering at UIUC, where I was fortunate to be advised by Prof. <a href = "http://sanmi.cs.illinois.edu/">Sanmi Koyejo</a> and Prof. <a href = "https://scholar.google.co.in/citations?hl=en&user=Kj35VJ8AAAAJ&view_op=list_works">Yoram Bresler</a>. </h6></p>
 	<h6>
 		My research is driven by the goal of building more capable, reliable, and general-purpose artificial intelligence systems. I am particularly interested in three core challenges: improving reasoning and decision-making capabilities, ensuring safety and reliability, and enabling models to effectively acquire and process information across multiple modalities. My research focuses on: 
 	</h6>
@@ -68,19 +94,27 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
       <div class="w3-container w3-card w3-white w3-margin-bottom" id = "Education">
         <h2 class="w3-text-black w3-padding-6"><i class="fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
 	<div class="w3-container">
-          <p><h4><b>Massachusetts Institute of Technology(MIT)</b></h4></p>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2021 - 2023</h6>
-	<p><h6><b>M.S. in Electrical Engineering and Computer Science</b></h6></p>
-	<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2023 - 2026(expected)</h6>
-	<p><h6><b>Ph.D. in Electrical Engineering and Computer Science</b></h6></p>
-	  <p><h6><b>GPA: 5.0/5.0 </b> </h6></p>
-        </div>
-        <div class="w3-container">
-          <p><h4><b>University of Illinois at Urbana-Champaign(UIUC)</b></h4></p>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017 - 2021</h6>
-          <p><h6><b>B.S. in Computer Engineering</b></h6></p>
-          <p><h6><b>GPA: 4.0/4.0 </b> </h6></p>
-	  <p><h6><b>Graduated with Highest Honors and <a href = "https://digital.library.illinois.edu/items/30e5a8e0-ac81-013a-c336-02d0d7bfd6e4-f#?c=0&m=0&s=0&cv=0&r=0&xywh=-4111%2C-1%2C12220%2C4000">Bronze Tablet</a> </b> </h6></p>
+	  <div class="entry-row">
+	    <img src="Images/mit_logo.png" alt="MIT logo" class="entry-logo">
+	    <div class="entry-body">
+	      <h4><b>Massachusetts Institute of Technology(MIT)</b></h4>
+	      <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2021 - 2023</h6>
+	      <h6><b>M.S. in Electrical Engineering and Computer Science</b></h6>
+	      <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2023 - 2026(expected)</h6>
+	      <h6><b>Ph.D. in Electrical Engineering and Computer Science</b></h6>
+	      <h6><b>GPA: 5.0/5.0 </b></h6>
+	    </div>
+	  </div>
+	  <div class="entry-row">
+	    <img src="Images/uiuc_logo.png" alt="UIUC logo" class="entry-logo">
+	    <div class="entry-body">
+	      <h4><b>University of Illinois at Urbana-Champaign(UIUC)</b></h4>
+	      <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017 - 2021</h6>
+	      <h6><b>B.S. in Computer Engineering</b></h6>
+	      <h6><b>GPA: 4.0/4.0 </b></h6>
+	      <h6><b>Graduated with Highest Honors and <a href = "https://digital.library.illinois.edu/items/30e5a8e0-ac81-013a-c336-02d0d7bfd6e4-f#?c=0&m=0&s=0&cv=0&r=0&xywh=-4111%2C-1%2C12220%2C4000">Bronze Tablet</a> </b></h6>
+	    </div>
+	  </div>
         </div>
       </div>
 	
@@ -88,18 +122,46 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
       <div class="w3-container w3-card w3-white w3-margin-bottom" id = "Work Experience">
         <h2 class="w3-text-black w3-padding-6"><i class="fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
         <div class="w3-container">
-	  <p><h4><b>Research Internship at Meta Superintelligence Lab (MSL)</b></h4></p>
-	  <p><h6><b>Reward Modeling & RLHF for Full-duplex Voice Agent</b></h6></p>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Summer 2025</h6>
-	  <p><h4><b>Research Internship at GenAI, Meta</b></h4></p>
-	  <p><h6><b>TTS & Post-training for Speech LLM</b></h6></p>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Summer 2024</h6>
-      <p><h4><b>Research Internship at MIT-IBM Watson AI Lab</b></h4></p>
-	  <p><h6><b>LLM Uncertainty Quantification & Calibration</b></h6></p> 
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Summer 2023</h6>
-	  <p><h4><b>Research Internship at MIT-IBM Watson AI Lab</b></h4></p>
-	  <p><h6><b>LLM Gradient-free Prompt Tuning</b></h6></p> 
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Summer 2022</h6>
+	  <div class="entry-row">
+	    <img src="Images/microsoft_logo.jpeg" alt="Microsoft logo" class="entry-logo">
+	    <div class="entry-body">
+	      <h4><b>Research Internship at Microsoft, Office of Applied Research</b></h4>
+	      <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Summer 2026</h6>
+	      <h6><b>Training Self-Improving Agent</b></h6>
+	    </div>
+	  </div>
+	  <div class="entry-row">
+	    <img src="Images/meta_log.png" alt="Meta logo" class="entry-logo">
+	    <div class="entry-body">
+	      <h4><b>Research Internship at Meta Superintelligence Lab (MSL)</b></h4>
+	      <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Summer 2025</h6>
+	      <h6><b>Reward Modeling & RLHF for Full-duplex Voice Agent</b></h6>
+	    </div>
+	  </div>
+	  <div class="entry-row">
+	    <img src="Images/meta_log.png" alt="Meta logo" class="entry-logo">
+	    <div class="entry-body">
+	      <h4><b>Research Internship at GenAI, Meta</b></h4>
+	      <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Summer 2024</h6>
+	      <h6><b>TTS & Post-training for Speech LLM</b></h6>
+	    </div>
+	  </div>
+	  <div class="entry-row">
+	    <img src="Images/ibm_log.png" alt="IBM logo" class="entry-logo">
+	    <div class="entry-body">
+	      <h4><b>Research Internship at MIT-IBM Watson AI Lab</b></h4>
+	      <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Summer 2023</h6>
+	      <h6><b>LLM Uncertainty Quantification & Calibration</b></h6>
+	    </div>
+	  </div>
+	  <div class="entry-row">
+	    <img src="Images/ibm_log.png" alt="IBM logo" class="entry-logo">
+	    <div class="entry-body">
+	      <h4><b>Research Internship at MIT-IBM Watson AI Lab</b></h4>
+	      <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Summer 2022</h6>
+	      <h6><b>LLM Gradient-free Prompt Tuning</b></h6>
+	    </div>
+	  </div>
         </div>
       </div>
       
